@@ -13,7 +13,6 @@ class CategoricalActionSpace:
 class SelectEntityActionSpace:
     pass
 
-
 ActionSpace = Union[CategoricalActionSpace, SelectEntityActionSpace]
 
 
