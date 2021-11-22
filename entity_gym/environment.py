@@ -68,6 +68,7 @@ class Observation:
     Maps each entity index to an opaque identifier used by the environment to
     identify that entity.
     """
+    
     action_masks: Mapping[str, ActionMask]
     """Maps each action to an action mask."""
     reward: float
@@ -123,6 +124,7 @@ class Environment(ABC):
 
     @classmethod
     @abstractmethod
+    
     def action_space(cls) -> Dict[str, ActionSpace]:
         """
         Returns a dictionary mapping the name of actions to their action space.
